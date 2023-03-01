@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AE8AB365-97F8-491B-B5A1-F15C0BA9A530}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>SOLUTION_MG_BlackHorse.My.MyApplication</StartupObject>
+    <RootNamespace>SOLUTION_MG_BlackHorse</RootNamespace>
+    <AssemblyName>SOLUTION_MG_BlackHorse</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SOLUTION_MG_BlackHorse.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SOLUTION_MG_BlackHorse.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.Abstractions.6.0.0\lib\net461\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.3\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Datagridvb.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FrmIzvestajStanja.designer.vb">
+      <DependentUpon>FrmIzvestajStanja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmIzvestajStanja.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLagerLista.designer.vb">
+      <DependentUpon>FrmLagerLista.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLagerLista.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogIn.designer.vb">
+      <DependentUpon>FrmLogIn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogIn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.designer.vb">
+      <DependentUpon>FrmMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOtpremnica.designer.vb">
+      <DependentUpon>FrmOtpremnica.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOtpremnica.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPopis.designer.vb">
+      <DependentUpon>FrmPopis.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPopis.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPredajnica.designer.vb">
+      <DependentUpon>FrmPredajnica.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPredajnica.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrenosnica.designer.vb">
+      <DependentUpon>frmPrenosnica.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrenosnica.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrijemnica.designer.vb">
+      <DependentUpon>FrmPrijemnica.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrijemnica.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRadniNalog.designer.vb">
+      <DependentUpon>FrmRadniNalog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRadniNalog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRashod.designer.vb">
+      <DependentUpon>frmRashod.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRashod.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSifarnikArtikli.designer.vb">
+      <DependentUpon>FrmSifarnikArtikli.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSifarnikArtikli.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSifarnikArtikliRobneGrupe.designer.vb">
+      <DependentUpon>FrmSifarnikArtikliRobneGrupe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSifarnikArtikliRobneGrupe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSifarnikDrzava.designer.vb">
+      <DependentUpon>FrmSifarnikDrzava.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSifarnikDrzava.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSifarnikKomitenti.designer.vb">
+      <DependentUpon>FrmSifarnikKomitenti.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSifarnikKomitenti.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSifarnikMagacini.designer.vb">
+      <DependentUpon>FrmSifarnikMagacini.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSifarnikMagacini.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSplash.designer.vb">
+      <DependentUpon>FrmSplash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSplash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTrebovanje.designer.vb">
+      <DependentUpon>FrmTrebovanje.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTrebovanje.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Globalne.vb" />
+    <Compile Include="Klase.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmIzvestajStanja.resx">
+      <DependentUpon>FrmIzvestajStanja.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLagerLista.resx">
+      <DependentUpon>FrmLagerLista.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogIn.resx">
+      <DependentUpon>FrmLogIn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOtpremnica.resx">
+      <DependentUpon>FrmOtpremnica.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPopis.resx">
+      <DependentUpon>FrmPopis.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPredajnica.resx">
+      <DependentUpon>FrmPredajnica.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrenosnica.resx">
+      <DependentUpon>frmPrenosnica.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrijemnica.resx">
+      <DependentUpon>FrmPrijemnica.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRadniNalog.resx">
+      <DependentUpon>FrmRadniNalog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRashod.resx">
+      <DependentUpon>frmRashod.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSifarnikArtikli.resx">
+      <DependentUpon>FrmSifarnikArtikli.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSifarnikArtikliRobneGrupe.resx">
+      <DependentUpon>FrmSifarnikArtikliRobneGrupe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSifarnikDrzava.resx">
+      <DependentUpon>FrmSifarnikDrzava.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSifarnikKomitenti.resx">
+      <DependentUpon>FrmSifarnikKomitenti.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSifarnikMagacini.resx">
+      <DependentUpon>FrmSifarnikMagacini.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSplash.resx">
+      <DependentUpon>FrmSplash.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTrebovanje.resx">
+      <DependentUpon>FrmTrebovanje.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Zebra\Zebra\Zebra.vbproj">
+      <Project>{e639995a-fb9e-48b1-84c7-dc81116111d4}</Project>
+      <Name>Zebra</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GrafickiPrikazApp\GrafickiPrikazApp.csproj">
+      <Project>{b5085b57-bf6a-4716-bd4c-f1fed45e0c44}</Project>
+      <Name>GrafickiPrikazApp</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="..\packages\Microsoft.Extensions.Logging.Abstractions.6.0.0\build\Microsoft.Extensions.Logging.Abstractions.targets" Condition="Exists('..\packages\Microsoft.Extensions.Logging.Abstractions.6.0.0\build\Microsoft.Extensions.Logging.Abstractions.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Extensions.Logging.Abstractions.6.0.0\build\Microsoft.Extensions.Logging.Abstractions.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Extensions.Logging.Abstractions.6.0.0\build\Microsoft.Extensions.Logging.Abstractions.targets'))" />
+  </Target>
+</Project>
